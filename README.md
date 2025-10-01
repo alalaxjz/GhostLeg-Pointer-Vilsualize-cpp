@@ -69,11 +69,11 @@ The result is:<br>
 11 33 22<br>
 22 33 11<br>
 
-We swap some value (the value can be address) each time after cout the **c1 **c2 and **c3 ( the *b's the **c's linked to, to the a's the *b's linked to. )
+We swap the address or the value each time after cout the **c1 **c2 and **c3 (**C - > *b -> a)
 
 ![Logo](images/first.png)
 
-When we swap b2 and b3 what we actually do is give b2 the address b3 has and give b3 the address b2 has. That is, if b2 was link to a2 (22) and b3 is link to a3 (33), now *b2 is 33 and *b3 is 22. When we swap *c2 and *c3 what we swap is b2 and b3. <br>
+When we swap b2 and b3 what we actually do is give b2 the address b3 has and give b3 the address b2 has. That is, if b2 was point to a2 (22) and b3 was point to a3 (33), after the operation *b2 is 33 and *b3 is 22. When we swap *c2 and *c3 what we swap is the b's they were point to. <br>
 
 I think of a cool way to visualize it: using the ghost leg:
 
@@ -81,9 +81,10 @@ I think of a cool way to visualize it: using the ghost leg:
 
 Now instead of a b c and 1 2 3 we use (the value of a1 a2 a3) at the top and (**c1 **c2 **c3) at the bottom. For each swap we just need to draw a line between the two number. Considering the swap between a1 and a3 we actually need to make a stereoscopic version. After testing and thinking by myself, I found out that the latter changes should be draw below the former ones. For example, if we swap a1 and a2 then swap a2 and a3, now a3 has the value of orig. a1. We draw the line connecting line 3 and line 2 below the line connecting line 2 and line 1 to ensure this happens correctly.<br>
 
-What if we swap the a's, the b's and the c's but not in the sequence of a, b, and c? Which should be placed at the bottom? They should be put in different layers. In other words, we can deal the swapping of them seperately. The swaping of c's has nothing to do with the swaping of b's and a's. Since the sequence is c to b to a, the swapping of c should be the lowest, which is near the **c1, **c2, **c3 at the bottom.<br>
+What if we swap the a's, the b's and the c's but not in the sequence of a, b, and c? Which one should be placed at the bottom? They should be put in different layers. In other words, we can deal the swapping of them seperately. The swaping of c's has nothing to do with the swaping of b's and a's. Since the sequence is c to b to a, the swapping of c should be the lowest, which is near the **c1, **c2, **c3 at the bottom.<br>
 
-The last thing that annoys me is which level and order should I place the *b or **c because they point to the address that is not on their own level. First I thought the swap of *b1 and *b2 equals to the swap of a1 and a2, which is not correct. After countless previous operations, *b1 can already be pointed to a2 or a3. As a matter of fact, we can regard **c as c though it seems incorrect. What the swapping of **c1 and **c2 actually do is to swap the a value of c1 and c2. We can regard it as equivalent to just swapping c1 and c2 because the change of value is actually the same. This can only be wrong when we ask from the sequence of *b1 *b2 *b3 after asking **c1 **c2 and **c3 because what I just did is swaping c instead of swaping a, the result is only correct if we neglect the result of b's.
+The last thing that annoys me is which level and order should I place the *b or **c at because they point to the address that is not on their own level. First I thought the swap of *b1 and *b2 equals to the swap of a1 and a2, which is not correct. After countless previous operations, *b1 can already be pointed to a2 or a3. As a matter of fact, we can regard **c as c though it seems incorrect. What the swapping of **c1 and **c2 actually do is to swap the a value of c1 and c2. We can consider it equivalent while the change of value is actually the same. This will be wrong when we ask  *b1 *b2 *b3 after asking **c1 **c2 and **c3 because what I just did is swaping c instead of swaping a, the result is only correct if we neglect the result of b's.
 
 ![Logo](images/result.png)
 
+The method can be appplied to more than three layers and levels. You can use by image to check if the result is correct by your self.

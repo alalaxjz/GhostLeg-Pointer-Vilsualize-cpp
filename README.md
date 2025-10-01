@@ -69,4 +69,6 @@ The result is:<br>
 11 33 22<br>
 22 33 11<br>
 
-We swap some value (the value can be address) each time after cout the **c1 **c2 and **c3 ( the *b's the **c's link to, to the a's the *b's link to.
+We swap some value (the value can be address) each time after cout the **c1 **c2 and **c3 ( the *b's the **c's linked to, to the a's the *b's linked to. )
+
+![Logo](images/first.png)

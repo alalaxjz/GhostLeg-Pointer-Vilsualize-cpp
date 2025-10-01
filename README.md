@@ -7,7 +7,7 @@ A pointer is another way to access to the memory location of a variable.
 int N = 12;
 int *pointer;
 pointer = &N; //point to N and & means changeble because &N means the address of N.
-<br></pre>
+</pre>
 
 now if we cout pointer it will give us the address of N. Only if we cout *pointer that means the value inside the address of N, which is 12. Therefore if we change pointer we change the address, which has nothing to do with N. But if we change *Pointer what we actually change is the value of N.<br>
 
@@ -20,7 +20,7 @@ b = &a;
 c = &b;
 d = &c;
 e = &d;
-cout << ****e << ***e <<  **e <<  *e <<  e << endl;<br></pre>
+cout << ****e << ***e <<  **e <<  *e <<  e << endl;</pre>
 
 we actually made a pointer e which point to other address four time. We will cout the value of a, then the address of a, b, c, d.<br>
 
@@ -58,7 +58,7 @@ int main() {
   cout << **c1 << " " << **c2 << " " << **c3 << endl;
   return 0;
 }
-<br></pre>
+</pre>
 
 The result is:
 11 22 33

@@ -72,3 +72,5 @@ The result is:<br>
 We swap some value (the value can be address) each time after cout the **c1 **c2 and **c3 ( the *b's the **c's linked to, to the a's the *b's linked to. )
 
 ![Logo](images/first.png)
+
+When we swap b2 and b3 what we actually do is give b2 the address b3 has and give b3 the address b2 has. That is, if b2 was link to a2 (22) and b3 is link to a3 (33), now *b2 is 33 and *b3 is 22. I think of a cool way to visualize it: using the ghost leg:

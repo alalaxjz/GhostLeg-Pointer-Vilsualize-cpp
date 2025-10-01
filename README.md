@@ -9,7 +9,7 @@ int *pointer;
 pointer = &N; //point to N and & means changeble because &N means the address of N.
 </pre>
 
-now if we cout pointer it will give us the address of N. Only if we cout *pointer that means the value inside the address of N, which is 12. Therefore if we change pointer we change the address, which has nothing to do with N. But if we change *Pointer what we actually change is the value of N.<br>
+now if we cout pointer it will give us the address of N. Only if we cout *pointer we cout the value inside the address of N, which is 12. Therefore if we change pointer we change the address, which has nothing to do with N. But if we change *Pointer what we actually change is the value of N.<br>
 
 So when:
 

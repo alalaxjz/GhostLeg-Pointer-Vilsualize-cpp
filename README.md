@@ -24,7 +24,7 @@ cout << ****e << ***e <<  **e <<  *e <<  e << endl;</pre>
 
 we actually made a pointer e which point to other address four time. We will cout the value of a, then the address of a, b, c, d.<br>
 
-Our class has a cool example:
+## Our class has a cool example:
 
 <pre>
 #include <iostream>
@@ -68,3 +68,5 @@ The result is:<br>
 11 22 33<br>
 11 33 22<br>
 22 33 11<br>
+
+We swap some value (the value can be address) each time after cout the **c1 **c2 and **c3 ( the *b's the **c's link to, to the a's the *b's link to.

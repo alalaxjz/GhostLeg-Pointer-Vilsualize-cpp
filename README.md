@@ -3,7 +3,7 @@ Using the rule of ghost leg to visualize the swapping of of multi-level Pointers
 
 A pointer is another way to access to the memory location of a variable.
 
-<pre><br>
+<pre>
 int N = 12;
 int *pointer;
 pointer = &N; //point to N and & means changeble because &N means the address of N.
@@ -13,7 +13,7 @@ now if we cout pointer it will give us the address of N. Only if we cout *pointe
 
 So when:
 
-<pre><br>
+<pre>
 int a, *b, **c, ***d, ****e;
 a = 10;
 b = &a;
@@ -26,7 +26,7 @@ we actually made a pointer e which point to other address four time. We will cou
 
 Our class has a cool example:
 
-<pre><<br>
+<pre>
 #include <iostream>
 using namespace std;
 

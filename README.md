@@ -60,7 +60,7 @@ int main() {
 }
 </pre>
 
-The result is:
+The result is:<br>
 11 22 33<br>
 22 11 33<br>
 22 33 11<br>
